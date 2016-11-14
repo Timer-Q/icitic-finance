@@ -1,111 +1,5 @@
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-select,
-textarea,
-p,
-blockquote,
-th,
-td,
-embed,
-object,
-.btn {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    -ms-box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
-    height: 100%;
-}
-
-ul,
-ol,
-li {
-    list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: 12px;
-    font-weight: normal;
-}
-
-i,
-em {
-    font-style: normal;
-}
-
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-select,
-input,
-button,
-textarea {
-    font: 100% tahoma, arial, Microsoft Yahei;
-    outline: none;
-}
-
-body {
-    font: 12px Helvetica Neue, arial, Microsoft Yahei;
-    color: #222;
-    -webkit-font-smoothing: antialiased;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-img {
-    border: none;
-}
-
 input::-ms-clear {
     display: none;
-}
-
-body {
-    background: url('../images/bg.png') center no-repeat;
 }
 
 .mr-0 {
@@ -114,126 +8,135 @@ body {
 
 .clearfix {
     &:after {
-        content: ' ';
-        clear: both;
         display: table;
+        clear: both;
+        content: ' ';
     }
 }
 
-.header {
-    padding: ;
-    background: url();
+.bg {
+    background: #272a56 url('../images/bg.png') center top no-repeat;
+    min-height: 100%;
+}
+
+.logo {
+    height: 60px;
+    margin: 0;
+    background: #fff url('../images/logo.png') 20px center no-repeat;
 }
 
 .container {
-    width: 1080px;
-    margin: 0 auto;
+    width: 785px;
     height: 100%;
-    position: relative;
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.header {
+    font-family: Helvetica Neue, arial, Microsoft Yahei;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px 10px #5d5d5d;
+    margin-top: 0;
+    padding-top: 40px;
+    font-size: 38px;
+    margin-bottom: 0;
 }
 
 .catagory-content {
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 .row {
-    margin-top: 50px;
     .clearfix;
-    a {
-        text-decoration: none;
-    }
     a:last-child {
         .circle {
             margin-right: 0;
         }
     }
     .circle {
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        background-image: linear-gradient(to bottom, #2784ed, #116dd4);
-        box-shadow: 0 6px 12px #083367;
-        padding-top: 20px;
-
         float: left;
-        margin-right: 240px;
-        
+        width: 218px;
+        height: 218px;
+        margin-right: 4em;
+        background: url('../images/circle-bg.png') center no-repeat;
+        padding-top: 50px;
+        box-sizing: border-box;
         .circle-bg {
             display: block;
-            width: 130px;
-            height: 110px;
-            margin: 0 auto 10px;
-            background: url('../images/category.png') no-repeat;
+            width: 94px;
+            height: 78px;
+            margin: 0 auto;
             transition: background .5s ease-in-out;
+            background: url('../images/category.png') no-repeat;
         }
         &.circle-bg-internet-pay {
-            .circle-bg {
-                background-position: 0 0;
-            }
             &:hover {
                 .circle-bg {
-                    background-position: -130px 0;
+                    background-position: -93.5px 0;
                 }
             }
         }
         &.circle-bg-risk {
             .circle-bg {
-                background-position: 0 -110px;
+                background-position: 0 -78px;
             }
             &:hover {
                 .circle-bg {
-                    background-position: -130px -110px;
+                    background-position: -94px -78px;
                 }
             }
         }
         &.circle-bg-bigData {
             .circle-bg {
-                background-position: 0 -220px;
+                background-position: 0 -156px;
             }
             &:hover {
                 .circle-bg {
-                    background-position: -130px -220px;
+                    background-position: -94px -155px;
                 }
             }
         }
         &.circle-bg-SCM {
             .circle-bg {
-                background-position: 0 -330px;
+                background-position: 0 -234px;
             }
             &:hover {
                 .circle-bg {
-                    background-position: -130px -330px;
+                    background-position: -94px -233px;
                 }
             }
         }
         &.circle-bg-puhui {
             .circle-bg {
-                background-position: 0 -440px;
+                background-position: 0 -312px;
             }
             &:hover {
                 .circle-bg {
-                    background-position: -130px -440px;
+                    background-position: -93.5px -311.5px;
                 }
             }
         }
         &.circle-bg-mobile {
             .circle-bg {
-                background-position: 0 -550px;
+                background-position: 0 -390px;
             }
             &:hover {
                 .circle-bg {
-                    background-position: -130px -550px;
+                    background-position: -94px -390px;
                 }
             }
         }
         .circle-text {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 2;
             text-align: center;
             color: #fff;
+            margin-top: 5px;
         }
+    }
+    a {
+        text-decoration: none;
     }
 }
